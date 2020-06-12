@@ -19,6 +19,6 @@
   </div>
 
 ```
-> 脚本中，可以通过 `.tt-toast` 上是否有 `.show` 类来控制 `toast`面板的显示隐藏
+> 通过 `.tt-toast` 上是否有 `.show` 类来控制 `toast`面板的显示隐藏
 
 <toast></toast>

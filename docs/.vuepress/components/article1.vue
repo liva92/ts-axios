@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="tt-content">
+      <h2 class="tt-panel-title">文章详情</h2>
       <div class="tt-article fold" ref="foldWraper">
         <h1 class="tt-article-title">什么是UI框架</h1>
         <p class="tt-article-info">作者：Liva</p>
@@ -10,17 +11,17 @@
             先来说下UI，这俩字母是User
             Interface的缩写，一般翻译成“用户界面”。UI最主要的功能就是建立用户和系统后台之间的联系，系统后台通过UI把数据转换成可视化的内容展示给用户，同时用户也要通过UI把操作指令（包括数据）传给系统后台。
           </p>
-          <p class="tt-article-paragraph">
-            对UI不太熟悉的同学一听到这个概念，可能会觉得它的作用就是怎么把一个产品做的漂亮，所以UI设计师经常被人叫成美工。而事实上UI应该是负责“交互”和“视觉”这两方面的工作，这两部分内容构成了产品的用户体验。
-          </p>
-          <p class="tt-article-paragraph">
-            用户体验里最重要的应该是这个产品好不好用，也就是“交互”这部分，这其中包括产品功能是否完善，产品流程是否设计的合理，使用是否方便，操作是否流畅等。在一些大公司里，为了保证产品好用，还会专门设置交互设计师这个职位，专门做交互部分的设计工作。
-          </p>
+          <p
+            class="tt-article-paragraph"
+          >对UI不太熟悉的同学一听到这个概念，可能会觉得它的作用就是怎么把一个产品做的漂亮，所以UI设计师经常被人叫成美工。而事实上UI应该是负责“交互”和“视觉”这两方面的工作，这两部分内容构成了产品的用户体验。</p>
+          <p
+            class="tt-article-paragraph"
+          >用户体验里最重要的应该是这个产品好不好用，也就是“交互”这部分，这其中包括产品功能是否完善，产品流程是否设计的合理，使用是否方便，操作是否流畅等。在一些大公司里，为了保证产品好用，还会专门设置交互设计师这个职位，专门做交互部分的设计工作。</p>
           <img class="tt-article-img" src="./img/list-img.jpg" alt="测试图片" />
         </div>
 
         <div class="tt-article-unfold-btn" id="js-unfold" @click="removeFold">
-          <i class="fa fa-angle-double-down fa-vibrate-y "></i>
+          <i class="fa fa-angle-double-down fa-vibrate-y"></i>
         </div>
       </div>
 
@@ -33,15 +34,15 @@
 </template>
 
 <script>
-import 'font-awesome/css/font-awesome.min.css';
-import '../public/assets/ui.min.css';
+import "font-awesome/css/font-awesome.min.css";
+import "../public/assets/ui.min.css";
 
 export default {
   methods: {
     removeFold() {
-      this.$refs.foldWraper.classList.remove('fold');
-    },
-  },
+      this.$refs.foldWraper.classList.remove("fold");
+    }
+  }
 };
 </script>
 

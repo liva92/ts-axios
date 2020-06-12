@@ -1,8 +1,6 @@
 <template>
   <div class="searchWrap">
     <div class="content">
-    <h1 class="tt-panel-title">搜索框：</h1>
-
       <div class="tt-search" ref="ttSearch">
         <!-- 搜索框 -->
         <form class="tt-search-form" action="#">
@@ -14,9 +12,10 @@
               placeholder="搜索"
               autocomplete="off"
               required
+              v-model="inputVal"
               @focus="showSuggestion"
             />
-            <i class="fa fa-close tt-search-clear"></i>
+            <i class="fa fa-close tt-search-clear" @click="searchClear"></i>
           </div>
           <span class="tt-search-cancel" @click="cancelSuggestion">取消</span>
         </form>
@@ -24,14 +23,9 @@
         <ul class="tt-search-suggest">
           <li class="tt-suggest-item">手机</li>
           <li class="tt-suggest-item">iPhone XS Max</li>
-          <li class="tt-suggest-item">华为P30</li>
-          <li class="tt-suggest-item">小米 MIX3</li>
-          <li class="tt-suggest-item">诺基亚1110</li>
+          <li class="tt-suggest-item">华为P40</li>
         </ul>
       </div>
-      <p class="content">内容区</p>
-      <p class="content">内容区</p>
-      <p class="content">内容区</p>
       <p class="content">内容区</p>
     </div>
   </div>
@@ -44,12 +38,20 @@ import "../public/assets/ui.min.css";
 
 export default {
   name: "search",
+  data: function() {
+    return {
+      inputVal: ""
+    };
+  },
   methods: {
     showSuggestion() {
       this.$refs.ttSearch.classList.add("on-focus");
     },
     cancelSuggestion() {
       this.$refs.ttSearch.classList.remove("on-focus");
+    },
+    searchClear() {
+      this.inputVal = "";
     }
   }
 };
@@ -57,8 +59,6 @@ export default {
 <style  scoped>
 .searchWrap {
   position: relative;
-  top: 20%;
-  padding-top: 40px;
 }
 .tt-search-cancel {
   cursor: pointer;

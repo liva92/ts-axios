@@ -33,7 +33,6 @@ export default {
       setTimeout(() => {
         this.$refs.loadingT.classList.remove("show");
       }, 2000);
-      console.log("123");
     },
     showSuccess() {
       this.$refs.successT.classList.add("show");

@@ -4,7 +4,7 @@
     <div class="tt-content">
       <h1 class="tt-panel-title">ActionSheet弹出式菜单</h1>
       <div class="tt-panel-body">
-        <a class="tt-btn" id="js-show">显示弹出式菜单</a>
+        <a class="tt-btn" id="js-show">点击弹出式菜单</a>
       </div>
     </div>
 

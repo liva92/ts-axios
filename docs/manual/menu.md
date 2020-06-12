@@ -25,8 +25,6 @@
 
 ```
 
-> 开关按钮通过 `checked` 类控制高亮状态
-
 <content1>
   <h1 class="tt-panel-title">菜单组件</h1>
   <div class="tt-panel-body no-padding">
