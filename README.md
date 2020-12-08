@@ -36,12 +36,15 @@ import 'app-beauty';
 
 0.1.1
 - 【Initial】初始版本
+
 0.1.2
 - 【Add】Panel 组件的标题部分添加“查看更多”这种引导链接的样式。
 - 【Bug Fix】Search 组件指定 z-index，解决和有定位元素同时使用时的层级错乱问题。 
+
 0.1.3
 - 【Bug Fix】 action-sheet 组件样式增修
   .tt-action-sheet > a,#js-show  { cursor: pointer;outline: none;}
   .tt-article-unfold-btn{cursor: pointer}   
+  
 0.1.4
 - 更新 README.md
