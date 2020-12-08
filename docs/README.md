@@ -6,7 +6,7 @@ actionText: 快速上手 →
 actionLink: /manual/
 features:
 - title: 小巧
-  details: css文件大小不超过13kB,实现移动端常用的组件，比如input,button等组件
+  details: 压缩后文件大小只有4.3kB,实现移动端常用的组件，比如input,button,search,loding,action-sheet，modal等组件
 - title: 简洁
   details: 项目核心部分只使用了 HTML 和 CSS
 - title: 可扩展

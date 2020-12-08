@@ -8,17 +8,19 @@
 
 ## 移动端 ui 样式库
 ### 安装
-npm install app-beauty
+npm i app-beauty
 
 
 ### 使用
 
+#### 方式一
 本插件依赖 font-awesome@4.7.0，安装本插件的同时也会安装 font-awesome。在使用本 UI 样式库的时候可以直接引用对应的 CSS 文件：
 
 import 'font-awesome/css/font-awesome.min.css';
 import 'app-beauty/css/ui.min.css';
 
-同时，本插件已经使用 js 文件打包了两个 css 文件，在支持 CSS 模块的项目里也可以像下面这样直接引用插件：
+#### 方式二
+本插件已经使用 js 文件打包了两个 css 文件，在支持 CSS 模块的项目里也可以像下面这样直接引用插件：
 
 import 'app-beauty';
 
@@ -29,7 +31,6 @@ import 'app-beauty';
 ### 项目职责
 
 1. 实现移动端常用的组件，比如toast,search,loding,action-sheet，modal等组件
-2. 实现npm包发布 ,下载执行npm i ui-mobile-liva 即可
 
 ### 变更记录
 
@@ -44,3 +45,5 @@ import 'app-beauty';
   .tt-action-sheet > a,#js-show  { cursor: pointer;outline: none;}
   .tt-article-unfold-btn{cursor: pointer}
 
+0.1.4
+- 更新 README.md
