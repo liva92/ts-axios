@@ -7,8 +7,11 @@
 -->
 
 ## 移动端 ui 样式库
+### 安装
+npm install app-beauty
 
-### 说明
+
+### 使用
 
 本插件依赖 font-awesome@4.7.0，安装本插件的同时也会安装 font-awesome。在使用本 UI 样式库的时候可以直接引用对应的 CSS 文件：
 
